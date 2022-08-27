@@ -15,7 +15,15 @@ header{
     border-radius: 52px;
     background-color: blueviolet;
     margin-top: 18px; 
-   
+}
+
+.BtnCarrito{
+    border-radius: 5px;
+    padding: 5px;
+    background-color:white;
+    margin-left: 20px;
+    font-size: 15px;
+    
 }
 
 .navMain{
@@ -41,4 +49,21 @@ h3{
     width: 4rem;
     height: auto;
     border-radius: 35px;
+}
+.flex{
+    display: flex;
+    align-self: center;
+
+}
+.dive{
+    margin: auto;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: wheat;
+    margin-left: 20px;
+    font-size: 1em;
+}
+.carrito{
+    width: 40px;
+    height: 29px;
 }
