@@ -13,9 +13,9 @@ return(
         </div>
         <nav className="nav">
             
-            <a className="me-1 btn btn-light" href="#">Inicio</a>
-            <a className="me-1 btn btn-light" href="#">Cosa</a>
-            <a className="me-1 btn btn-light" href="#">Extras</a>
+            
+            <a className="me-1 btn btn-light" href="#">Productos1</a>
+            <a className="me-1 btn btn-light" href="#">Productos2</a>
             
         </nav>
 </header>
