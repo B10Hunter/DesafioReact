@@ -9,13 +9,13 @@ return(
     
         <div className='flex'>
             <button className='BtnCarrito' onClick={mostrarMensaje}><img src={imgcart} className='carrito'></img></button>
-            <div className='dive'><p className='text'>En total {cart} productos</p></div>
+            <div className='dive '><p className='text aling-items-center justify-content-center'>En total {cart} productos</p></div>
         </div>
         <nav className="nav">
             
             
-            <a className="me-1 btn btn-light" href="#">Productos1</a>
-            <a className="me-1 btn btn-light" href="#">Productos2</a>
+            <a className="me-1 btn btn-light" href="#">Zapatillas</a>
+            <a className="me-1 btn btn-light" href="#">Remeras</a>
             
         </nav>
 </header>
