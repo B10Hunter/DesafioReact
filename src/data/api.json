@@ -3,8 +3,8 @@
     "precio": 16.899 ,
     "id": 1 ,
     "nombre": "Zapatillas runnig Adidas galaxy 5" ,
-    "img" : "./img/zapatillas/zapatillas-runnig-adidas-galaxy/azul.jpg",
-    "logo": "./img/logo/addidas.png",
+    "img" : "negras1.jpg",
+    "logo": "/img/logo/addidas.png",
     "marca" : "Addidas"
     
 },
@@ -12,8 +12,8 @@
     "precio": 29.699 ,
     "id": 2 ,
     "nombre": "Zapatillas Running Nike air zoom winflo 8" ,
-    "img" : "./img/zapatillas/running-nike-air-zoom-winflo-8/gris1.jpg",
-    "logo": "./img/logo/nike.png",
+    "img" : "gris1.jpg",
+    "logo": "/img/logo/nike.png",
     "marca" : "Nike"
     
 },
@@ -21,7 +21,7 @@
     "precio": 14.999 ,
     "id": 3 ,
     "nombre": "Zapatillas Adidas Breaknet" ,
-    "img" : "../img/zapatillas/breaknet-blancas/blanca1.jpg",
+    "img" : "blanca1.jpg",
     "logo": "./img/logo/addidas.png",
     "marca" : "Addidas"
     
@@ -30,7 +30,7 @@
     "precio": 36.299,
     "id": 4 ,
     "nombre": "Zapatillas Running Nike air zoom pegasus" ,
-    "img" : "./img/zapatillas/running-nike-air-zoom-negras/negras1.jpg",
+    "img" : "negras1.jpg",
     "logo": "./img/logo/nike.png",
     "marca" : "Nike"
     
@@ -39,7 +39,7 @@
     "precio": 9.099 ,
     "id": 5 ,
     "nombre": "Remera Stripes" ,
-    "img" : "./img/remeras/stripes/remera-negra.jpg",
+    "img" : "remera-negra.jpg",
     "logo": "./img/logo/addidas.png",
     "marca" : "Addidas"
     
@@ -48,7 +48,7 @@
     "precio": 6.499 ,
     "id": 6 ,
     "nombre": "Remera Fila day" ,
-    "img" : "./img/remeras/fila-day/fila-day1.jpg",
+    "img" : "fila-day1.jpg",
     "logo": "./img/logo/fila.png",
     "marca" : "Fila"
     
@@ -57,7 +57,7 @@
     "precio": 16.999 ,
     "id": 7 ,
     "nombre": "Remera juventus" ,
-    "img" : "./img/remeras/camiseta jueventus/camiseta-juventus-adidas1.jpg",
+    "img" : "camiseta-juventus-adidas1.jpg",
     "logo": "./img/logo/addidas.png",
     "marca" : "Addidas"
     
@@ -66,7 +66,7 @@
     "precio": 6.059 ,
     "id": 8 ,
     "nombre": "Remera Puma para mujer" ,
-    "img" : "./img/remeras/remera puma mujer/puma1.jpg",
+    "img" : "puma1.jpg",
     "logo": "./img/logo/puma.png",
     "marca" : "Puma"
     

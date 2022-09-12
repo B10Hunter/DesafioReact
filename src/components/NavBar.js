@@ -1,7 +1,7 @@
 import img from '../img/El-rocomovil.jpg'
 import imgcart from '../img/carrito.png'
 
-const NavBar = ({mostrarMensaje, cart}) =>{
+const NavBar = ({mostrarMensaje, cart}) =>{//carrito de compra
 return( 
 <header className='navBordes' >
     <img className='img' src={img} ></img>
@@ -9,7 +9,7 @@ return(
     
         <div className='flex'>
             <button className='BtnCarrito' onClick={mostrarMensaje}><img src={imgcart} className='carrito'></img></button>
-            <div className='dive '><p className='text aling-items-center justify-content-center'>En total {cart} productos</p></div>
+            <div className='dive'><p className='text '>En total {cart} productos</p></div>
         </div>
         <nav className="nav">
             
