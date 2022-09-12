@@ -20,7 +20,7 @@ const promesa = new Promise((resolve, reject) =>{
 const Items = () => {
   return (
     <div className='container'> 
-        { //hago la cards de los productos
+        { //hago la cards de los productos + el boton de detalle "DetalleItems"
         productos.map((producto,i) =>
 
         <div className=' row ' key={i}  >

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 
 
  
-const ItemListConatiner = () => {//botones de sumar y restar productos + 
+const ItemListConatiner = () => {//botones de sumar y restar productos  
     const [resultado, setResultado] = useState (0);
     
      useEffect (() =>{ 
