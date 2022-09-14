@@ -23,7 +23,7 @@ const ItemListConatiner = () => {//botones de sumar y restar productos
          <button type="button" onClick={()=> setResultado (resultado + 1)} class="btn btn-primary me-1">+</button>
       </div>
     </div>
-  )
+  );
 }
 
 export default ItemListConatiner

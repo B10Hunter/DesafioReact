@@ -1,23 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import productos from "../data/api.json"
 import ItemListConatiner from './ItemListConatiner'
-
+import { useParams } from 'react-router-dom'
 import DetalleItems from './DetalleItems'
 
 
 
-
-const promesa = new Promise((resolve, reject) =>{
-    setTimeout(() =>{
-      resolve(productos);
-    },3000)
-  })
-  promesa
-  .then(producto=>console.log(producto));
-  
-
  
 const Items = () => {
+
+  const [data , setData] = useState ([]);
+  
+  const {categoriaID} = useParams();
+  
+    useEffect (() => {
+      const getData = new Promise (resolve =>{
+          setTimeout(() => {
+            resolve(productos);
+          },3000);
+        });
+        if (categoriaID){
+          getData.then(res =>setData (res.filter(productos => productos.categoria === categoriaID)));
+        } else {
+          getData.then(res => setData(res));
+        }
+       
+    },[categoriaID])
+  
+
   return (
     <div className='container'> 
         { //hago la cards de los productos + el boton de detalle "DetalleItems"
@@ -26,8 +36,8 @@ const Items = () => {
         <div className=' row ' key={i}  >
             <div className='  row m-auto mb-1 col-5  justify-content-center' data-bs-toggle="modal" data-bs-target={`#id${producto.id}`} >
                 <div className='   card shadow mb-2 rounded' >
-                    <div class="card-body ">
-                        <p class="card-text text-center"> {producto.nombre}</p>
+                    <div className="card-body ">
+                        <p className="card-text text-center"> {producto.nombre}</p>
                     </div>
                     <div >
                         <img className='imgTam' src={`${process.env.PUBLIC_URL}/img/${producto.img}`} ></img>

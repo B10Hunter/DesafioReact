@@ -5,7 +5,8 @@
     "nombre": "Zapatillas runnig Adidas galaxy 5" ,
     "img" : "negras1.jpg",
     "logo": "/img/logo/addidas.png",
-    "marca" : "Addidas"
+    "marca" : "Addidas",
+    "categoria" : "zapatillas"
     
 },
 {
@@ -14,7 +15,8 @@
     "nombre": "Zapatillas Running Nike air zoom winflo 8" ,
     "img" : "gris1.jpg",
     "logo": "/img/logo/nike.png",
-    "marca" : "Nike"
+    "marca" : "Nike",
+    "categoria" : "zapatillas"
     
 },
 {
@@ -23,7 +25,8 @@
     "nombre": "Zapatillas Adidas Breaknet" ,
     "img" : "blanca1.jpg",
     "logo": "./img/logo/addidas.png",
-    "marca" : "Addidas"
+    "marca" : "Addidas",
+    "categoria" : "zapatillas"
     
 },
 {
@@ -32,7 +35,8 @@
     "nombre": "Zapatillas Running Nike air zoom pegasus" ,
     "img" : "negras1.jpg",
     "logo": "./img/logo/nike.png",
-    "marca" : "Nike"
+    "marca" : "Nike",
+    "categoria" : "zapatillas"
     
 },
 {
@@ -41,7 +45,8 @@
     "nombre": "Remera Stripes" ,
     "img" : "remera-negra.jpg",
     "logo": "./img/logo/addidas.png",
-    "marca" : "Addidas"
+    "marca" : "Addidas",
+    "categoria" : "remera"
     
 },
 {
@@ -50,7 +55,8 @@
     "nombre": "Remera Fila day" ,
     "img" : "fila-day1.jpg",
     "logo": "./img/logo/fila.png",
-    "marca" : "Fila"
+    "marca" : "Fila",
+    "categoria" : "remera"
     
 },
 {
@@ -59,7 +65,8 @@
     "nombre": "Remera juventus" ,
     "img" : "camiseta-juventus-adidas1.jpg",
     "logo": "./img/logo/addidas.png",
-    "marca" : "Addidas"
+    "marca" : "Addidas",
+    "categoria" : "remera"
     
 },
 {
@@ -68,7 +75,8 @@
     "nombre": "Remera Puma para mujer" ,
     "img" : "puma1.jpg",
     "logo": "./img/logo/puma.png",
-    "marca" : "Puma"
+    "marca" : "Puma",
+    "categoria" : "remera"
     
 }
 

@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
+//Botón de Detalle de Producto
+
 function DetalleItems({id,contenido,titulo,precio}) {
 
     const [show, setShow] = useState(false);
