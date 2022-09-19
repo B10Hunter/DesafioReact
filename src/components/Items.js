@@ -1,59 +1,124 @@
 import React, { useEffect, useState } from 'react'
 import productos from "../data/api.json"
 import ItemListConatiner from './ItemListConatiner'
-import { useParams } from 'react-router-dom'
+import { useParams, NavLink } from 'react-router-dom'
 import DetalleItems from './DetalleItems'
+import Prueba from './Prueba'
 
-
-
+const prod =[
+  {
+      "precio": 16.899 ,
+      "id": 1 ,
+      "nombre": "Zapatillas runnig Adidas galaxy 5" ,
+      "img" : "negras1.jpg",
+      "logo": "/img/logo/addidas.png",
+      "marca" : "Addidas",
+      "categoria" : "zapatillas"
+      
+  },
+  {
+      "precio": 29.699 ,
+      "id": 2 ,
+      "nombre": "Zapatillas Running Nike air zoom winflo 8" ,
+      "img" : "gris1.jpg",
+      "logo": "/img/logo/nike.png",
+      "marca" : "Nike",
+      "categoria" : "zapatillas"
+      
+  },
+  {
+      "precio": 14.999 ,
+      "id": 3 ,
+      "nombre": "Zapatillas Adidas Breaknet" ,
+      "img" : "blanca1.jpg",
+      "logo": "./img/logo/addidas.png",
+      "marca" : "Addidas",
+      "categoria" : "zapatillas"
+      
+  },
+  {
+      "precio": 36.299,
+      "id": 4 ,
+      "nombre": "Zapatillas Running Nike air zoom pegasus" ,
+      "img" : "negras1.jpg",
+      "logo": "./img/logo/nike.png",
+      "marca" : "Nike",
+      "categoria" : "zapatillas"
+      
+  },
+  {
+      "precio": 9.099 ,
+      "id": 5 ,
+      "nombre": "Remera Stripes" ,
+      "img" : "remera-negra.jpg",
+      "logo": "./img/logo/addidas.png",
+      "marca" : "Addidas",
+      "categoria" : "remeras"
+      
+  },
+  {
+      "precio": 6.499 ,
+      "id": 6 ,
+      "nombre": "Remera Fila day" ,
+      "img" : "fila-day1.jpg",
+      "logo": "./img/logo/fila.png",
+      "marca" : "Fila",
+      "categoria" : "remeras"
+      
+  },
+  {
+      "precio": 16.999 ,
+      "id": 7 ,
+      "nombre": "Remera juventus" ,
+      "img" : "camiseta-juventus-adidas1.jpg",
+      "logo": "./img/logo/addidas.png",
+      "marca" : "Addidas",
+      "categoria" : "remeras"
+      
+  },
+  {
+      "precio": 6.059 ,
+      "id": 8 ,
+      "nombre": "Remera Puma para mujer" ,
+      "img" : "puma1.jpg",
+      "logo": "./img/logo/puma.png",
+      "marca" : "Puma",
+      "categoria" : "remeras"
+      
+  }
+  
+  ]
  
-const Items = () => {
+ 
+const Items = () => {//intente hacer con filtrado de id pero no me sale Tutor, despues me puede decir como hacer.
+ 
+
 
   const [data , setData] = useState ([]);
   
   const {categoriaID} = useParams();
   
     useEffect (() => {
-      const getData = new Promise (resolve =>{
+      const getData = new Promise ((resolve,reject) =>{
           setTimeout(() => {
-            resolve(productos);
-          },3000);
+            resolve(prod);
+          },1000);
         });
-        if (categoriaID){
-          getData.then(res =>setData (res.filter(productos => productos.categoria === categoriaID)));
+        if(categoriaID){
+          getData.then(res => setData(res.filter (prod => prod.categoria === categoriaID)))
         } else {
-          getData.then(res => setData(res));
+        getData.then(res => setData(res));
         }
-       
-    },[categoriaID])
+        
+        },[categoriaID])
   
 
   return (
-    <div className='container'> 
-        { //hago la cards de los productos + el boton de detalle "DetalleItems"
-        productos.map((producto,i) =>
+    <div className='container'>
 
-        <div className=' row ' key={i}  >
-            <div className='  row m-auto mb-1 col-5  justify-content-center' data-bs-toggle="modal" data-bs-target={`#id${producto.id}`} >
-                <div className='   card shadow mb-2 rounded' >
-                    <div className="card-body ">
-                        <p className="card-text text-center"> {producto.nombre}</p>
-                    </div>
-                    <div >
-                        <img className='imgTam' src={`${process.env.PUBLIC_URL}/img/${producto.img}`} ></img>
-                    </div>
-                    <div className='p-2 d-flex justify-content-center"'>
-                        <ItemListConatiner/>
-                        <button className='me-3 btn btn-outline-primary'>comprar</button>
-                        <button className='btn btn-outline-primary'>agregar al carrito</button>
-                        <DetalleItems id={producto.id} precio={producto.precio} contenido={`${process.env.PUBLIC_URL}/img/${producto.img}`} titulo={producto.nombre} />
-                    </div> 
-                </div> 
-            </div>
-            
-        </div>
-
-        )}
+    
+      <Prueba data={data}/>
+     
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = ({mostrarMensaje, cart}) =>{//carrito de compra
 return( 
 <header className='navBordes' >
-    <NavLink to="/" ><img className='img' src={img} ></img></NavLink>
+    <NavLink to="/DesafioReact" ><img className='img' src={img} ></img></NavLink>
     <h3>Bienvenidos</h3>
     
         <div className='flex'>
@@ -14,8 +14,8 @@ return(
         </div>
         <nav>
             <ul className="nav">
-                <li><NavLink className="me-1 btn btn-light" to="/modelo/remeras">Remeras</NavLink></li>
-                <li><NavLink className="me-1 btn btn-light" to="/modelo/zapatillas">Zapatillas</NavLink></li>
+                <li><NavLink className="me-1 btn btn-light" to="/categoria/remeras">Remeras</NavLink></li>
+                <li><NavLink className="me-1 btn btn-light" to="/categoria/zapatillas">Zapatillas</NavLink></li>
             </ul>
         </nav>
 </header>

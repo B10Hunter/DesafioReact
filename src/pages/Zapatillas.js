@@ -1,8 +1,14 @@
 import React from 'react'
+import Cosa from '../components/Cosa'
+import Items from '../components/Items'
 
-const Zapatillas = () => {
+const Zapatillas = ({modelo}) => {
   return (
-    <div>Zapatillas</div>
+    <div>
+      <Cosa modelo={<p className='h3'>Zapatillas</p>}/>
+      <Items />
+
+    </div>
   )
 }
 
