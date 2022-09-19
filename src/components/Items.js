@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import productos from "../data/api.json"
-import ItemListConatiner from './ItemListConatiner'
-import { useParams, NavLink } from 'react-router-dom'
-import DetalleItems from './DetalleItems'
+import { useParams } from 'react-router-dom'
 import Prueba from './Prueba'
 
 const prod =[
