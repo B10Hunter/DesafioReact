@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import ItemListConatiner from './ItemListConatiner'
-{/*Resultado de detalle*/}
+{/*Resultado de detalle + stock del producto y llevar el producto al carrito*/ }
 const DetalleDePro = ({data}) => {
+    const [goToCart, setGoToCart] = useState (false) 
+
+      const onAdd = (quantity) => {
+        setGoToCart (true)
+      }
+
   return (
     <div className='container'> 
         
@@ -15,9 +22,13 @@ const DetalleDePro = ({data}) => {
                     <img className='imgTam' src={`${process.env.PUBLIC_URL}/img/${data.img}`} ></img>
                 </div>
                 <div className='p-2 d-flex justify-content-center"'>
-                    <ItemListConatiner/>
+                  {
+                    goToCart
+                    ? <Link className='me-3 btn btn-outline-primary' to='/cart'>Terminar compra </Link>
+                    : <ItemListConatiner inicial={3} stock={5} onAdd={onAdd} />
+                  }
+                    
                     <button className='me-3 btn btn-outline-primary'>comprar</button>
-                    <button className='btn btn-outline-primary'>agregar al carrito</button>
                 </div> 
             </div> 
         </div>

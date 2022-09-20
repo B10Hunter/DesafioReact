@@ -16,11 +16,9 @@ const Prod = ({info}) => {
                     <img className='imgTam' src={`${process.env.PUBLIC_URL}/img/${info.img}`} ></img>
                 </div>
                 <div className='p-2 d-flex justify-content-center"'>
-                    <ItemListConatiner/>
                     <button className='me-3 btn btn-outline-primary'>comprar</button>
                     <button className='btn btn-outline-primary'>agregar al carrito</button>
-                    <DetalleItems id={info.id} precio={info.precio} contenido={`${process.env.PUBLIC_URL}/img/${info.img}`} titulo={info.nombre} />
-                    <NavLink to={`/producto/${info.id}`}>Detalle completo</NavLink>
+                    <NavLink className='me-1 btn btn-light' to={`/producto/${info.id}`}>Detalle completo</NavLink>
                 </div> 
             </div> 
         </div>

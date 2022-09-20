@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Mostrarcarrito = ({cart}) => {//contenedor de carrito 
+const Mostrarcarrito = () => {//contenedor de carrito 
   return (
     <div>
-       <p>En total {cart} roductos</p>
+       <p>En total Productos</p>
     </div>
   )
 }
