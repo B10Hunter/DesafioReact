@@ -1,8 +1,11 @@
-import React from 'react'
-import ItemListConatiner from './ItemListConatiner'
+import React, { useContext } from 'react'
 import DetalleItems from './DetalleItems'
 import { NavLink } from 'react-router-dom'
+
+
 const Prod = ({info}) => {
+
+    
   return (
     <div className='container'> 
         

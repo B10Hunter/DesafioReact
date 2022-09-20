@@ -1,9 +1,9 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
  
 const ItemListConatiner = ({inicial, stock , onAdd}) => {//botones de sumar y restar productos  
-    const [resultado, setResultado] = useState (inicial);
+    const [resultado, setResultado] = useState (parseInt(inicial));
     
     const restar = () => {
         setResultado(resultado - 1);
@@ -11,6 +11,9 @@ const ItemListConatiner = ({inicial, stock , onAdd}) => {//botones de sumar y re
     const sumar = () => {
       setResultado(resultado + 1);
   }
+    useEffect(()=>{
+      setResultado(parseInt(inicial))
+    },[inicial])
   return ( 
   <div className="m-auto">
       <div className=' px-2 py-2 d-flex justify-content-center"'>
