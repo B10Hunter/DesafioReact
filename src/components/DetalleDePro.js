@@ -20,7 +20,10 @@ const DetalleDePro = ({data}) => {
         <div className='  row m-auto mb-1 col-5  justify-content-center' >
             <div className='   card shadow mb-2 rounded' >
                 <div className="card-body ">
-                    <p className="card-text text-center"> {data.nombre} </p>
+                    <p className="card-text text-center"> {data.nombre} <span>
+                    ${data.precio}
+                    </span>
+                    </p>
                 </div>
                 <div >
                     <img className='imgTam' src={`${process.env.PUBLIC_URL}/img/${data.img}`} ></img>

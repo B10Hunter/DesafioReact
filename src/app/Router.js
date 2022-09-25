@@ -22,7 +22,7 @@ return (
                     <Route path="/cart"  element={<Mostrarcarrito/>} />
                     <Route path='/producto/:detalleID' element={<ItemsDetallePro />} />
                     <Route path='/categoria/:categoriaID' element={<Items />} />{/*filtro de remera o zapatillas*/}
-                    <Route path="*" element={<div>Error 404</div> } /> {/*Pagina error si no se encuentra la pagina correspondiente*/}
+                    <Route path="*" element={<div className="text-center pt-2">Error 404</div> } /> {/*Pagina error si no se encuentra la pagina correspondiente*/}
                 </Route>
             </Routes>
         </CartProvider>

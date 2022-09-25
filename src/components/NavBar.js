@@ -1,16 +1,18 @@
 import img from '../img/El-rocomovil.jpg'
 import imgcart from '../img/carrito.png'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import CartWidget from './CartWidget';
 
-const NavBar = ({mostrarMensaje, cart}) =>{//carrito de compra
+const NavBar = () =>{//carrito de compra
+
 return( 
 <header className='navBordes' >
     <NavLink to="/DesafioReact" ><img className='img' src={img} ></img></NavLink>
     <h3>Bienvenidos</h3>
     
         <div className='flex'>
-            <button className='BtnCarrito' onClick={mostrarMensaje}><img src={imgcart} className='carrito'></img></button>
-            <div className='dive'><p className='text '>En total {cart} productos</p></div>
+            <Link className='BtnCarrito' to='/cart' ><img src={imgcart} className='carrito'></img></Link>
+            <div className='dive'> <CartWidget/></div>
         </div>
         <nav>
             <ul className="nav">
