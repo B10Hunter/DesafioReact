@@ -7,7 +7,7 @@ const ItemCart = ({prod}) => {//Detalle de cada producto en el carrito
   return (
     <div className='itemCart'> 
         <img src={`${process.env.PUBLIC_URL}/img/${prod.img}`} ></img>
-        <div>
+        <div className='my-2'>
             <p>Nombre: {prod.nombre} </p>
             <p>Cantidad: {prod.quantity} </p>
             <p>Precio: {prod.precio} </p>
