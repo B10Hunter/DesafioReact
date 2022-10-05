@@ -1,5 +1,4 @@
-import React, { useContext } from 'react'
-import DetalleItems from './DetalleItems'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 
@@ -7,29 +6,25 @@ const Prod = ({info}) => {
 
     
   return (
-    <div className='container'> 
-        
-    <div className=' row pt-3 ' key={info.id}   >
-        <div className='  row m-auto mb-1 col-5  justify-content-center ' >
-            <div className='   card shadow mb-2 rounded' >
-                <div className="card-body ">
-                    <p className="card-text text-center"> {info.nombre} <span>
-                    ${info.precio}
-                    </span></p>
-                    
-                </div>
-                <div >
-                    <img className='imgTam' src={`${process.env.PUBLIC_URL}/img/${info.img}`} ></img>
-                </div>
-                <div className='p-2 d-flex justify-content-center"'>
-                    <button className='me-auto btn btn-outline-primary '>comprar</button>
-                    <NavLink className='me-4 btn btn-light' to={`/producto/${info.id}`}>Detalle completo</NavLink>
-                </div> 
-            </div> 
+    <div className='container boder-cart'> 
+        <div className=' row pt-3 ' key={info.id}   > 
+            <div className='  row m-auto mb-1 col-5  justify-content-center ' >
+                <NavLink className=' btn btn-light' to={`/producto/${info.id}`}>
+                    <div className='   card shadow mb-2 rounded' >
+                        <div className="card-body d-flex text-center ">
+                            <p className=" textName text-center"> {info.nombre}</p>
+                            <span className='textMoney'>
+                            ${info.precio}
+                            </span>
+                        </div>
+                        <div >
+                            <img className='imgTam' src={`${process.env.PUBLIC_URL}/img/${info.img}`} ></img>
+                        </div>
+                    </div> 
+                </NavLink>
+            </div>
         </div>
-        
     </div>
-  </div>
   )
 }
 

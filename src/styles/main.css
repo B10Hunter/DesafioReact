@@ -12,17 +12,20 @@ header{
     padding: 0 2rem;
 }
 .navBordes{
-    border-radius: 52px;
-    background-color: blueviolet;
-    margin-top: 18px; 
+    
+    background: linear-gradient(220.55deg, #ea08ff 0%, #4b3052 100%);
+    margin-top: 10px; 
 }
 
 .BtnCarrito{
-    border-radius: 5px;
-    padding: 5px;
+    
+    border: 1.7px solid rgb(54, 54, 54) ;
+    border-radius: 40px;
+    width: 3rem ;
+    height:3rem ;
     background-color:white;
-    margin-left: 20px;
     font-size: 15px;
+    margin-right: 0px;
     
 }
 
@@ -39,11 +42,6 @@ a{
     color: blueviolet;
 }
 
-h3{
-    border-radius: 5px;
-    padding: 2px;
-    background-color: wheat;
-}
 
 .img {
     width: 4rem;
@@ -56,17 +54,32 @@ h3{
 
 }
 .dive{
-    margin: auto;
-    border-radius: 5px;
-    padding: 2px;
-    background-color: wheat;
+    margin:10px 10px 10px 50px;
+    border-radius: 30px;
+    padding-bottom: px;
+    background-color: rgb(255, 255, 255);
     margin-left: 20px;
-    font-size: 1em;
+    font-size: 14px;
+    border: 3px solid #8f59cc;    
+    position: absolute;
+    top: 4px;
+    right: 220px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-family: 'Vollkorn SC', serif;
+    text-shadow: 3px 1px 2px rgb(241, 236, 236), 2px 1px 1px rgb(186, 96, 221);
+    color: rgb(85, 19, 116);
+    
+    
 }
 .carrito{
     width: 40px;
     height: 29px;
+    margin-top: 8px;
+    position: relative;
 }
+
 .caja{
     width: 601px;
     height: 195px;
@@ -79,11 +92,261 @@ h3{
 
 .itemCart{
     display: flex;
-    border-bottom: 1px solid gray;
+    border:1px solid #83259b;
     max-width: 500px;
     margin: 1rem auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family:  'Vollkorn SC', serif;
+    
 }
+
 .itemCart img{
     width: 200px ;
+    height: 200px;
     margin-right: 1rem;
+    border: 3px solid #4b3052;
+    margin: 5px;
+    border-radius: 10px;
+}
+.DetalleCompra{
+    
+    text-shadow: 1px 1px 5px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255);
+    color: rgb(93, 84, 94);
+    font-size: 15px;
+    border:2px solid #83259b;
+    border-radius: 20px;
+    margin: 9px;
+    padding: 10px;
+    box-shadow: 1px 2px 4px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255) ;
+}
+.textDetalle{
+    text-shadow: none;
+    color: #000000;
+    font-size: 13px;
+    border-left: 2px solid #8d39a1;
+    border-bottom-left-radius:10px ;
+    padding-left:2px;
+    padding-bottom: 6px;
+    padding-top: 5px;
+}
+.btnEliminar{
+    border-left: 2px solid #83259b;
+    border-top: 2px solid #83259b;;
+    font-size: 23px;
+    box-shadow: 2px 4px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255) ;
+    border-bottom-right-radius: 20px ;
+    border-top-left-radius: 20px;
+    font-family: 'Lobster', cursive; ;
+    background-color: rgb(255, 255, 255);
+    color: #4b3052;
+    margin-bottom: 13px ;
+    margin-top: 7px;
+}
+.btnEliminar:hover{
+    color: aliceblue;
+    background-color: #83259b;
+}
+.btnBuscarProd{
+    border-left: 2px solid #83259b;
+    border-top: 2px solid #83259b;;
+    font-size: 33px;
+    box-shadow: 2px 4px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255) ;
+    border-bottom-right-radius: 20px ;
+    border-top-left-radius: 20px;
+    font-family: 'Lobster', cursive; ;
+    background-color: rgb(255, 255, 255);
+    color: #4b3052;
+    margin: 30px auto;
+    width: 400px;
+    height: 50px;
+}
+.btnBuscarProd:hover{
+    color: aliceblue;
+    background-color: #83259b;
+}
+.total{
+    text-shadow: 1px 1px 1px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255);
+    color: rgb(207, 152, 209);
+    font-size: 23px;
+    text-decoration:none;
+    border:2px solid #83259b;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 4px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255) ;
+    margin: 6px auto;
+    height: 50px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    background-image: url("../img/nubes.jpg");
+}
+
+.tituloText{
+    font-family: 'Vollkorn SC', serif;
+    text-shadow: 3px 2px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin: 30px auto 20px;
+    position:relative ;
+    left: 80px;
+    
+    
+}
+
+.homerText{
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px 1px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255);
+    color: aliceblue;
+    font-size: 50px;
+    text-decoration:none;
+    margin-top: 20px;
+    
+}
+
+
+.bordesProd{
+    border: 3px solid rgb(107, 17, 160);
+    background-color: rgba(255, 254, 254, 0.781);
+    max-width: 500px;
+    margin: 1rem auto;
+    border-radius: 30px;
+    font-family: 'Vollkorn SC', serif;
+    text-shadow: 3px 2px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.botonMenu{
+    color: #9707bb;
+    border: 1px solid black;
+    text-decoration: none;
+    margin: 23px 10px 1px;
+    background-color: rgb(255, 255, 253);
+    font-size: 20px;
+    font-family:'Lobster', cursive;
+    border-radius: 20px;
+    padding: 3px;
+}
+.botonMenu:hover{
+    background-color: rgb(64, 17, 107);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255) ;
+
+}
+
+.textName{
+    
+    text-shadow: 1px 1px 1px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255);
+    color: rgb(207, 152, 209);
+    font-size: 23px;
+    text-decoration:none;
+    border-bottom:2px solid #83259b;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 2px 4px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255) ;
+    
+}
+.textMoney{
+    border-left: 2px solid #83259b;
+    border-top: 2px solid #83259b;;
+    font-size: 23px;
+    padding:5px 10px ;
+    margin:auto;
+    box-shadow: 2px 4px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255) ;
+    border-bottom-right-radius: 20px ;
+    border-top-left-radius: 20px;
+    font-family: 'Lobster', cursive; 
+    
+}
+
+.btnCompra{
+    border-left: 2px solid #83259b;
+    border-top: 2px solid #83259b;;
+    font-size: 23px;
+    padding:5px 10px ;
+    margin:5px 100px 10px;
+    box-shadow: 2px 4px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255) ;
+    border-bottom-right-radius: 20px ;
+    border-top-left-radius: 20px;
+    font-family: 'Lobster', cursive; ;
+    background-color: rgb(255, 255, 255);
+    color: #4b3052;
+}
+
+.btnCompra:hover{
+    color: aliceblue;
+    background-color: #83259b;
+}
+
+.btnCantidad{
+    border-left: 2px solid #83259b;
+    border-top: 2px solid #83259b;;
+    font-size: 23px;
+    padding:5px 10px ;
+    margin:5px 30px 10px;
+    box-shadow: 2px 4px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255) ;
+    border-bottom-right-radius: 20px ;
+    border-top-left-radius: 20px;
+    font-family: 'Lobster', cursive; ;
+}
+.btnCantidad:hover{
+    color: aliceblue;
+    background-color: #83259b;
+}
+.txtCantidad{
+    position: absolute;
+    left: 98px;
+    bottom: 3px;
+    text-shadow: 1px 1px 1px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255);
+    color: rgb(155, 69, 158);
+    font-size: 20px;
+    border:2px solid #b680c4;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+.textCat{
+    text-shadow: 1px 1px 1px rgb(199, 144, 221), 3px 2px 1px rgb(255, 255, 255);
+    color: rgb(96, 13, 99);
+    font-size: 23px;
+    border:2px solid #83259b;
+    border-radius: 15px;
+    margin: 1px 32px;
+    padding: 4px 9px;
+    width: 120px;
+    height: 45px ;
+    text-align: center;
+}
+
+.btnIrCart{
+    border-left: 2px solid #83259b;
+    border-top: 2px solid #83259b;;
+    font-size: 23px;
+    padding:5px 10px ;
+    margin:5px 30px 10px;
+    box-shadow: 2px 4px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255) ;
+    border-bottom-right-radius: 20px ;
+    border-top-left-radius: 20px;
+    font-family: 'Lobster', cursive; ;
+    color: #4b3052;
+}
+.btnIrCart:hover{
+    color: aliceblue;
+    background-color: #83259b;
+}
+
+.textCompra{
+    color: #83259b;
+    font-size: 17px;
+    padding: 1px 15px;
+    border: 1px solid #83259b;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255) ;
+    height: 60px;
+    width: 280px;
+    
 }

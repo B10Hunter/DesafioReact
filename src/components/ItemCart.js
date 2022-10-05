@@ -8,11 +8,11 @@ const ItemCart = ({prod}) => {//Detalle de cada producto en el carrito
     <div className='itemCart'> 
         <img src={`${process.env.PUBLIC_URL}/img/${prod.img}`} ></img>
         <div className='my-2'>
-            <p>Nombre: {prod.nombre} </p>
-            <p>Cantidad: {prod.quantity} </p>
-            <p>Precio: {prod.precio} </p>
-            <p>Subtotal: {prod.quantity * prod.precio} </p>
-            <button onClick={() => removeProd(prod.id) }> Eliminar</button>
+            <p className='DetalleCompra'>Nombre: <span className='textDetalle'>{prod.nombre}</span> </p>
+            <p className='DetalleCompra'>Cantidad: <span className='textDetalle h5'>{prod.quantity}</span> </p>
+            <p className='DetalleCompra'>Precio: <span className='textDetalle h5'>${prod.precio}</span>  </p>
+            <p className='DetalleCompra'>Subtotal: <span className='textDetalle h5'>${prod.quantity * prod.precio}</span> </p>
+            <button className='btnEliminar' onClick={() => removeProd(prod.id) }> Eliminar</button>
         </div>
   </div>
   )

@@ -34,8 +34,6 @@ const Items = () => {
 
   return (
     <div className='container'>
-
-    
       <DataDePro data={data}/>
      
     </div>
