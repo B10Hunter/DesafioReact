@@ -5,7 +5,6 @@ import Titulo from './Titulo';
 
 
 const NavBar = () =>{//carrito de compra
-   const tee = document.getElementsByClassName('tituloText')
     
 return( 
 <header className='navBordes border-4 border-bottom border-dark' >
@@ -18,7 +17,7 @@ return(
         </div>
         <nav>
             <ul className="nav">
-                <li><NavLink className="me-1 text-decoration-none" to="/categoria/remeras" onClick={() =>tee.addClass("te") }><p className='botonMenu'>Remeras</p></NavLink></li>
+                <li><NavLink className="me-1 text-decoration-none" to="/categoria/remeras" ><p className='botonMenu'>Remeras</p></NavLink></li>
                 <li><NavLink className="me-1 text-decoration-none" to="/categoria/zapatillas"><p className='botonMenu'>Zapatillas</p></NavLink></li>
             </ul>
         </nav>
