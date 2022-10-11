@@ -205,7 +205,18 @@ body {
     margin-top: 20px;
     
 }
-
+.te{
+    display: none;
+}
+.tituloCatego{
+    max-width: 500px;
+    margin: 1rem auto;
+    border-radius: 30px;
+    font-family: 'Vollkorn SC', serif;
+    text-shadow: 3px 2px 6px rgb(119, 17, 160), 3px 2px 1px rgb(255, 255, 255);
+    color: rgb(106, 23, 131);
+    font-size: 50px;
+}
 
 .bordesProd{
     border: 3px solid rgb(107, 17, 160);

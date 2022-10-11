@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Titulo = ({info}) => {
+const Titulo = ({categoria}) => {
   return (
-    <div>sasas</div>
+    <div className='tituloCatego text-center'>{categoria}</div>
   )
 }
 

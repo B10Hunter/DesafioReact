@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {getFirestore , collection, getDocs, query, where} from 'firebase/firestore'
 import { useParams } from 'react-router-dom'
 import DataDePro from './DataDePro'
-
+import Titulo from './Titulo'
 const Items = () => {
  
 
@@ -34,6 +34,7 @@ const Items = () => {
 
   return (
     <div className='container'>
+      <Titulo categoria={categoriaID}></Titulo>
       <DataDePro data={data}/>
      
     </div>
