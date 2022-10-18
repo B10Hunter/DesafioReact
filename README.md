@@ -5,7 +5,7 @@ Este proyecto lo hice con los conocimientos adquiridos en el Curso de React-JS e
 
 El proyecto esta pensando en ser una tienda versatil y tener una estetica muy llamativa, para que el usario vea y se sienta comodo al ver la pagina.
 El usario puede ver todos los productos en la pagina principal, aparte que en el 
-NavBar puede  filtrarlo por Zapatillas o Remera. Tambien tiene un carrito de compra que cuando el usario compre el producto o los productos aparesca en el carrito. En el carrito el usario puede borrar el producto que no quiere comprar y cuando finalice la compra el usario , tiene que llenar un formulario antes, para que cree una orden de compra que mandara a la base datos. 
+NavBar puede filtrarlo por Zapatillas o Remera. Tambien tiene un carrito de compra que cuando el usuario compre el producto o los productos aparesca en el carrito. En el carrito el usario puede borrar el producto que no quiere comprar , cuando finalice la compra el usuario tiene que llenar un formulario antes, para que se cree una orden de compra que se mandara a la base datos. La orden de compra se creara con los datos de usuario y los productos alquiridos.
 
 ### Acá le dejo un demo de la pagina en formato Gif:
 ![634ecfa01ed41283879325](https://user-images.githubusercontent.com/104284725/196485074-cc7dca7a-f5ac-430d-bab3-62ea645cb5d8.gif)
