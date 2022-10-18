@@ -8,7 +8,7 @@ const Prod = ({info}) => {
   return (
     <div className='container boder-cart'> 
         <div className=' row pt-3 ' key={info.id}   > 
-            <div className='  row m-auto mb-1 col-5  justify-content-center ' >
+            <div className='  row m-auto mb-1 col-5 justify-content-center ' >
                 <NavLink className=' btn btn-light' to={`/producto/${info.id}`}>
                     <div className='   card shadow mb-2 rounded' >
                         <div className="card-body d-flex text-center ">

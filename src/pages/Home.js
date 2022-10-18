@@ -1,13 +1,12 @@
 
-import Cosa from '../components/Cosa'
+import TitulodeProd from '../components/TitulodeProd'
 import Items from '../components/Items'
 
-const Home = () => {
+const Home = () => { //Pagina principal
   return (
     <>
-    <Cosa/>
-    <Items/>
-    
+      <TitulodeProd/>
+      <Items/>
     </>
   )
 }

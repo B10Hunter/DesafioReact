@@ -2,11 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import DetalleDePro from '../components/DetalleDePro';
 import {getFirestore, getDoc, doc} from 'firebase/firestore'
-{/*container de detalle*/}
 
 
-
-const ItemsDetallePro = () => {
+const ItemsDetallePro = () => {//container de detalle
 
     const [data , setData] = useState ([]);
 
