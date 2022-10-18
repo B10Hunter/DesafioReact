@@ -6,7 +6,7 @@ Este proyecto lo hice con los conocimientos adquiridos en el Curso de React-JS e
 El proyecto esta pensando en ser una tienda versatil y tener una estetica muy llamativas, para que el usario vea y se sienta comodo al ver la pagina.
 
 ### Acá le dejo un demo de la pagina en formato Gif:
-![Uploading Tienda L_B.gif…]()
+![634ecfa01ed41283879325](https://user-images.githubusercontent.com/104284725/196485074-cc7dca7a-f5ac-430d-bab3-62ea645cb5d8.gif)
 
 ## Librerías utilizadas
 
